@@ -1,0 +1,12 @@
+locations = ['USA', 'Hait', 'Dominican Republic', 'Puerto Rico', 'Cuba']
+print(locations)
+print(sorted(locations))
+print(locations)
+print(locations.reverse)
+print(locations)
+print(locations.reverse)
+print(locations)
+locations.sort()
+print(locations)
+locations.sort(reverse=True)
+print(locations)
