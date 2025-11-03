@@ -1,18 +1,24 @@
 users = {
-    'aeinstein': {
-        'first_name': 'albert',
-        'last_name' : 'einstein',
+
+    'aeinstein' :{
+        'first' : 'albert',
+        'last' : 'eintstein',
         'location' : 'princeton',
-    },
 
+    },
     'mcurie' : {
-        'first_name': 'marie',
-        'last_name' : 'curie',
+        'first' : 'marie',
+        'last' : 'curie',
         'location' : 'paris',
-
-    },
+    }
 }
 
 for username, user_info in users.items():
-    print(f"\nusername: {username}")
-    full_name = f""
+    print(f"\nUsername: {username}")
+    full_name = f"{user_info['first']} {user_info['last']}"
+    location = user_info['location']
+
+    print(f"\tFull Name: {full_name.title()}")
+    print(f"\tLocation: {location.title()}")
+
+    

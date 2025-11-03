@@ -1,12 +1,12 @@
-favorite_numbers = {'james': 0,
-                    'marshall': 34,
-                    'sanjeef' : 45,
-                    'michalangelo' : 39, 
-                    'raphael' : 63,
+favorite_numbers = {'james': {0,12},
+                    'marshall': {34,56},
+                    'sanjeef' : {45},
+                    'michalangelo' : {39,35,258,1684,564,658}, 
+                    'raphael' : {63},
+
+
                     }
 
-print(favorite_numbers['james'])
-print(favorite_numbers['marshall'])
-print(favorite_numbers['sanjeef'])
-print(favorite_numbers['michalangelo'])
-print(favorite_numbers['raphael'])
+for name, numbers in favorite_numbers.items():
+    print(f"\nName: {name.title()}")
+    print(f"Favorite number: {numbers}")
