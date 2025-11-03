@@ -15,7 +15,7 @@ for key, value in favorite_languages.items():
     print(f"\nName:{key.title()}" )
     print(f"Language: {value.title()}")
 
-for key2, value2, in favorite_languages.get(value, 'No vote'):
+for favorite_language, in favorite_languages.get(value, 'No vote'):
 
     if value2 == value2:
 
