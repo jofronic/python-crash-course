@@ -1,23 +1,29 @@
 def make_album(artist_name, album, track=None):
     """This recives artist album information """
-    album_info = {'artist name': artist_name, 'album': album}
+    summary = {'artist:':{artist_name}, 'album:':{album}}
+
     if track:
-        album_info['tracks'] = track
-    return album_info
-
+        summary['track number'] = track
+    
+    return summary
 while True:
+    stop = 'quit'
+    artist_answer = input('\nWhat is the name of the artist? ')
+    if artist_answer.lower() == stop:
+         break
     
-    artist_name = input('Enter the artist name')
-    if artist_name.lower() == 'quit':
-        break
-
-    album = input('What is the name of the album? ')
-    if album.lower() == 'quit':
+    album_answer= input ('What is the name of the album: ')
+    if album_answer.lower() == stop:         
+         break
+    
+    track_answer = input('How many tracks were on the album? ')
+    if not track_answer:
         break
     
-    track = input ("do you remember the track count(Press enter to skip)")
-    if track.lower == 'quit':
-        break
+    full_info = make_album(artist_answer, album_answer, track_answer)
 
-album_dict = make_album(artist_name, album, track)
-print(album_dict)
+print(f"These are the results of your albums lists:")
+print(full_info)
+
+
+    
