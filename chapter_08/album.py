@@ -1,6 +1,6 @@
 def make_album(artist_name, album, track=None):
     """This recives artist album information """
-    summary = {'artist:':{artist_name}, 'album:':{album}}
+    summary = {'artist:':artist_name, 'album:':album}
 
     if track:
         summary['track number'] = track
@@ -17,13 +17,13 @@ while True:
          break
     
     track_answer = input('How many tracks were on the album? ')
-    if not track_answer:
-        break
     
-    full_info = make_album(artist_answer, album_answer, track_answer)
+    if track_answer == '':
 
+        full_info = make_album(artist_answer, album_answer)
+    else:
+        full_info = make_album(artist_answer, album_answer,track_answer)
 print(f"These are the results of your albums lists:")
 print(full_info)
-
 
     
