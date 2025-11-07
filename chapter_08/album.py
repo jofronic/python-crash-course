@@ -23,6 +23,8 @@ while True:
         full_info = make_album(artist_answer, album_answer)
     else:
         full_info = make_album(artist_answer, album_answer,track_answer)
+
+        
 print(f"These are the results of your albums lists:")
 print(full_info)
 
