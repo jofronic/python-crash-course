@@ -16,23 +16,34 @@
 
 
 
-#simulate printing each design, until none are left
-#move each design to completed models after designings
-def print_models(unprinted_designs, completed_designs):
-    while unprinted_designs:
-        current_design = unprinted_designs.pop()
-        print(f"Print Model: {current_design}")
-        completed_designs.append(current_design)
-#Display all models
+# #simulate printing each design, until none are left
+# #move each design to completed models after designings
+# def print_models(unprinted_designs, completed_designs):
+#     while unprinted_designs:
+#         current_design = unprinted_designs.pop()
+#         print(f"Print Model: {current_design}")
+#         completed_designs.append(current_design)
+# #Display all models
 
-def show_complete_list(comlpeted_designs):
-    print(f"The following models have been completed: ")
-    for complete in completed_designs:
-        print(complete)
+# def show_complete_list(comlpeted_designs):
+#     print(f"The following models have been completed: ")
+#     for complete in completed_designs:
+#         print(complete)
 
+
+# unprinted_designs = ['phone case','robot pendent','dodecahedron']
+# completed_designs = []
+
+# print_models(unprinted_designs[:], completed_designs)
+# show_complete_list(completed_designs)
+
+
+
+import printing_functions as pf
 
 unprinted_designs = ['phone case','robot pendent','dodecahedron']
 completed_designs = []
 
-print_models(unprinted_designs[:], completed_designs)
-show_complete_list(completed_designs)
+pf.print_models(unprinted_designs[:],completed_designs)
+pf.show_complete_list(completed_designs)
+
