@@ -34,5 +34,5 @@ def show_complete_list(comlpeted_designs):
 unprinted_designs = ['phone case','robot pendent','dodecahedron']
 completed_designs = []
 
-print_models(unprinted_designs, completed_designs)
+print_models(unprinted_designs[:], completed_designs)
 show_complete_list(completed_designs)

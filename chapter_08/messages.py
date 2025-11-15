@@ -4,4 +4,4 @@ def show_text(text_list):
     for texts in text_list:
         print(texts)
 
-show_text(text_list)
+show_text(text_list[:])
