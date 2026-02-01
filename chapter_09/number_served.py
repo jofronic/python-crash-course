@@ -18,11 +18,7 @@ class Restaurant:
     def set_number_served(self, served):
 
         if served > 0:
-            print(f"We currently have {served} guests")
-            self.number_served = served + self.number_served
-            
-        else:
-            print(f"Be our first customer")     
+           self.number_served = served         
         
     
     def increment_number(self, new_servedTotal):
@@ -30,6 +26,7 @@ class Restaurant:
             self.number_served = self.number_served + new_servedTotal
 
     def read_newnumber(self):
+        print(f"{self.number_served}")
         print(f"{self.number_served}")
         
            
