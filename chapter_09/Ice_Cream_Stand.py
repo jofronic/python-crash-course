@@ -19,10 +19,10 @@ class IceCreamStand(Restaurant):
 
     def __init__(self, r_name, c_type, flavors):
         super().__init__(r_name, c_type, flavors)
-     
+        """This method sets the contstuctors that can be used throughout this class."""
     
     def  display_icecream(self):
-        
+        """This method only displays. Methods that display shouldnt change the values. If you want to change the values, create another method that does that. """    
         for flavor in self.flavors: 
            
             print(f"I hope you enjoy your {flavor.title()} ice cream")
