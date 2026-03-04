@@ -1,9 +1,9 @@
 class Restaurant:
     """This class has resturant name and cuisine type"""
-    def __init__(self, r_name, c_type, icecreamflavors):
+    def __init__(self, r_name, c_type, flavors):
         self.restaurant_name = r_name
         self.cusine_type = c_type
-        self.flavors = icecreamflavors
+        self.flavors = flavors
 
         
     def describe_restaurant(self):
@@ -15,4 +15,19 @@ class Restaurant:
 
 
 
-class IceCreamStand:
+class IceCreamStand(Restaurant):
+
+    def __init__(self, r_name, c_type, flavors):
+        super().__init__(r_name, c_type, flavors)
+     
+    
+    def  display_icecream(self):
+        
+        for flavor in self.flavors: 
+           
+            print(f"I hope you enjoy your {flavor.title()} ice cream")
+
+
+myicecream = IceCreamStand('Carvel', 'Ice Cream', ['chocalate', 'vanilla'])
+myicecream.describe_restaurant()
+myicecream.display_icecream()

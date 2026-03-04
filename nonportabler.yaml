@@ -1,0 +1,10 @@
+Resources:
+    Bucket:
+      Type: 'AWS::S3::Bucket'
+      Properties:
+          BucketName: 'accatpics16676654'
+    Instance:
+      Type: 'AWS::EC2::Instance'
+      Properties:
+        InstanceType: 't3.micro'
+        ImageId: 'ami-0c1fe732b5494dc14'
