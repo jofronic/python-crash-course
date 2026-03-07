@@ -25,7 +25,7 @@ class IceCreamStand(Restaurant):
         """This method only displays. Methods that display shouldnt change the values. If you want to change the values, create another method that does that. """    
         for flavor in self.flavors: 
            
-            print(f"I hope you enjoy your {flavor.title()} ice cream")
+            print(f"I hope you enjoy your {flavor.title()} Ice Cream")
 
 
 myicecream = IceCreamStand('Carvel', 'Ice Cream', ['chocalate', 'vanilla'])
