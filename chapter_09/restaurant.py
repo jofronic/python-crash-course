@@ -11,8 +11,8 @@ class Restaurant:
     def open_restaurant(self):
         print(f"{self.restaurant_name} is open!")
 
-my_spot = Restaurant('Mcdonalds', 'Fast Food')
-print(f"Is this {my_spot.restaurant_name}?")
-print(f"I dont generally eat {my_spot.cusine_type} so I hope this isnt {my_spot.restaurant_name}")
-my_spot.describe_restaurant()
-my_spot.open_restaurant()
+# my_spot = Restaurant('Mcdonalds', 'Fast Food')
+# print(f"Is this {my_spot.restaurant_name}?")
+# print(f"I dont generally eat {my_spot.cusine_type} so I hope this isnt {my_spot.restaurant_name}")
+# my_spot.describe_restaurant()
+# my_spot.open_restaurant()

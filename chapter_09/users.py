@@ -20,17 +20,17 @@ class User:
         # 👉 This controls what print(user) shows
         return f"{self.first_name} {self.last_name})"
 
-shout_out = User('Johan', 'Dominique', 40)
-shout_out2 = User('Onyi', 'Nwosu', 45, 'Brooklyn')
-shout_out3 = User('Cecilia', 'Oryi')
-shout_out4 = User('Sharma', 'Pinas')
+# shout_out = User('Johan', 'Dominique', 40)
+# shout_out2 = User('Onyi', 'Nwosu', 45, 'Brooklyn')
+# shout_out3 = User('Cecilia', 'Oryi')
+# shout_out4 = User('Sharma', 'Pinas')
 
-users = [shout_out,shout_out2,shout_out3,shout_out4]
-for user in users:
-    print(user)
-    user.describe_user()
-    user.greet_user()
-# print(shout_out)
+# users = [shout_out,shout_out2,shout_out3,shout_out4]
+# for user in users:
+#     print(user)
+#     user.describe_user()
+#     user.greet_user()
+# # print(shout_out)
 # shout_out.describe_user()
 # shout_out.greet_user()
 
