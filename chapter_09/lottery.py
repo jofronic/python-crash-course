@@ -10,11 +10,10 @@ class lotto:
         for i in range(4):
             choices = choice(self.pool_lotto)
             self.results.append(choices)
-    
+        return self.results
+        
     def show_selection(self):
         
         print(f"{self.results}")
 
-tik = lotto()
-tik.random_selection()
-tik.show_selection()
+
