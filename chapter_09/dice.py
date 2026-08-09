@@ -11,19 +11,28 @@ class DiceRoll():
         for i in range(10):
             
             random = randint(roll_start, roll_stop)
-            self.rolls.append(random)
-
-     
+            self.rolls.append(random)  
         
     
     def show_dice(self):
        for i in self.rolls: 
         print(f"{i}")
 
-dice = DiceRoll()
-dice.roll_dice(1,6)
-dice.show_dice()
-dice.roll_dice(1,10)
-dice.show_dice()
-dice.roll_dice(1,20)
-dice.show_dice()
+
+class Die():
+   def __init__(self, sides= 6):
+    #   self.roll_die()
+      self.sides = sides
+      # roll_die attribute
+   
+   def roll_die(self):
+    
+    print(randint(1, self.sides))
+
+
+
+
+
+ceelo = Die()
+for i in range(10):
+    ceelo.roll_die()
