@@ -1,0 +1,20 @@
+In Python you can store information in variables.
+In Python you can work with text using strings.
+In Python you can work with integers and decimal numbers.
+In Python you can use lists to store multiple values.
+In Python you can access individual items in a list using an index.
+In Python you can add, remove, and modify items in a list.
+In Python you can use for loops to repeat actions.
+In Python you can use range() to generate a sequence of numbers.
+In Python you can use slices to work with part of a list.
+In Python you can use tuples to store values that should not change.
+In Python you can use if statements to make decisions.
+In Python you can use dictionaries to store key-value pairs.
+In Python you can loop through keys and values in a dictionary.
+In Python you can use input() to get information from a user.
+In Python you can use while loops to repeat code while a condition is true.
+In Python you can create functions to organize reusable code.
+In Python you can pass arguments to functions and return values from functions.
+In Python you can store functions in modules and import them into other programs.
+In Python you can create classes and make instances from those classes.
+In Python you can use inheritance to create a class based on another class.
